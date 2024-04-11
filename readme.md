@@ -45,7 +45,7 @@ You only need four lines of code, to generate and view your first QR code.
 ```csharp
 QRCodeGenerator qrGenerator = new QRCodeGenerator();
 QRCodeData qrCodeData = qrGenerator.CreateQrCode("The text which should be encoded.", QRCodeGenerator.ECCLevel.Q);
-QRCode qrCode = new PngByteQRCode(qrCodeData);
+PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
 byte[] qrCodeImage = qrCode.GetGraphic(20);
 ```
 
